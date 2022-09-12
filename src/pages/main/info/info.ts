@@ -1,0 +1,13 @@
+import "./info.css";
+
+export const render = function() {
+	const el = document.createElement("div");
+
+	el.innerHTML = `
+		<div>TEST-Info</div>
+		<div>TEST2-Info</div>
+		<div>TEST3-Info</div>
+	`
+
+	return el;
+}
