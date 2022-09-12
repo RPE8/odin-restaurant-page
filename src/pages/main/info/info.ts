@@ -1,6 +1,6 @@
 import "./info.css";
 
-export const render = function() {
+export const render = function(): HTMLElement {
 	const el = document.createElement("div");
 
 	el.innerHTML = `

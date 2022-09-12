@@ -1,5 +1,7 @@
 import "./header.css";
 
+let listItem: HTMLElement, infoItem: HTMLElement;
+
 export const render = function():HTMLElement {
 	const b = [3,3,3];
 	const a = [...[1,2,3], ...b];
@@ -7,12 +9,12 @@ export const render = function():HTMLElement {
 	const header = document.createElement("header");
 	const headerContainer = document.createElement("div");
 	const menu = document.createElement("menu");
-	const listItem = document.createElement("li");
-	const infoItem = document.createElement("li");
+	listItem = document.createElement("li");
+	infoItem = document.createElement("li");
 
 	header.classList.add("header");
 	headerContainer.classList.add("header__container", "container");
-
+ 
 	listItem.setAttribute("id", "listItem");
 	listItem.setAttribute("id", "infoItem");
 
@@ -25,3 +27,13 @@ export const render = function():HTMLElement {
 
 	return header;
 }
+
+export const getListItem = function(): HTMLElement {
+	return listItem;
+}
+
+export const getInfoItem = function(): HTMLElement {
+	return infoItem;
+}
+
+

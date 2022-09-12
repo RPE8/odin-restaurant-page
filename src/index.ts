@@ -1,5 +1,5 @@
-import {render as headerRender} from "./pages/header/header";
-import {render as mainRender, displayList} from "./pages/main/main";
+import {render as headerRender, getListItem, getInfoItem} from "./pages/header/header";
+import {render as mainRender, displayList, displayInfo} from "./pages/main/main";
 
 const CONTENT = document.querySelector("#content");
 if (!CONTENT) {
@@ -8,3 +8,10 @@ if (!CONTENT) {
 
 CONTENT.append(headerRender(), mainRender());
 displayList();
+
+getListItem().addEventListener("click", (): void => {
+	displayList();
+});
+getInfoItem().addEventListener("click", (): void => {
+	displayInfo();
+});
