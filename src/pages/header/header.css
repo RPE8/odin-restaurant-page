@@ -1,6 +1,7 @@
 @font-face {
   font-family: 'Montserrat';
-  src: url('../../assets/fonts/Montserrat-Bold.ttf')
+  src: url('../../assets/fonts/Montserrat-Bold.ttf');
+	font-weight: bold;
 }
 
 .header, .header * {
@@ -23,6 +24,7 @@
 	align-items: center;
 	justify-content: center;
 	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
 }
 
 .container {
