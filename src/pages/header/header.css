@@ -21,7 +21,6 @@
 	width: 100%;
 	min-height: 4rem;
 	display: flex;
-	align-items: center;
 	justify-content: center;
 	font-family: "Montserrat", sans-serif;
 	font-weight: bold;
@@ -30,6 +29,11 @@
 .container {
 	height: 100%;
 	max-width: 1080px;
+}
+
+.header__container {
+	display: flex; 
+	align-items: center;
 }
 
 .header__menu {
