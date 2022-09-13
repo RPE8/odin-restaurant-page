@@ -14,9 +14,11 @@ export const render = function():HTMLElement {
 
 	header.classList.add("header");
 	headerContainer.classList.add("header__container", "container");
- 
+	
+	listItem.classList.add("header__menu-button");
+	infoItem.classList.add("header__menu-button");
 	listItem.setAttribute("id", "listItem");
-	listItem.setAttribute("id", "infoItem");
+	infoItem.setAttribute("id", "infoItem");
 
 	listItem.textContent = "List";
 	infoItem.textContent = "Info";

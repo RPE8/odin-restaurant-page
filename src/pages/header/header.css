@@ -11,8 +11,12 @@
 }
 
 .header {
-	--color-1: #DDA15E;
+	--color-1: #283618;
+	--color-2: #DDA15E;
+	--color-3: #BC6C25;
 	--bg-color: var(--color-1);
+	--font-color: var(--color-2);
+	--font-color--hover: var(--color-3);
 }
 
 .header {
@@ -23,7 +27,10 @@
 	display: flex;
 	justify-content: center;
 	font-family: "Montserrat", sans-serif;
+	color: var(--font-color);
+	
 	font-weight: bold;
+	font-size: 1.3rem;
 }
 
 .container {
@@ -40,4 +47,14 @@
 	list-style: none;
 	display: flex;
 	gap: 2rem;
+}
+
+.header__menu-button{
+	color: inherit;
+	transition: color .1s;
+}
+
+.header__menu-button:hover {
+	color: var(--font-color--hover);
+	transition: color .1s;
 }
