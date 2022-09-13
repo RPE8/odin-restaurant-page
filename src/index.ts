@@ -1,3 +1,4 @@
+import "./index.css";
 import {render as headerRender, getListItem, getInfoItem} from "./pages/header/header";
 import {render as mainRender, displayList, displayInfo} from "./pages/main/main";
 
