@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../../assets/fonts/Montserrat-Bold.ttf')
+}
+
 .header {
 	--color-1: #DDA15E;
 	--bg-color: var(--color-1);
@@ -11,9 +16,16 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	font-family: "Montserrat", sans-serif;
 }
 
 .container {
 	height: 100%;
 	max-width: 1080px;
+}
+
+.header__menu {
+	list-style: none;
+	display: flex;
+	gap: 2rem;
 }

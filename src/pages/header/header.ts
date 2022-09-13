@@ -21,6 +21,8 @@ export const render = function():HTMLElement {
 	listItem.textContent = "List";
 	infoItem.textContent = "Info";
 
+	menu.classList.add("header__menu")
+
 	menu.append(listItem, infoItem);
 	headerContainer.append(menu);
 	header.append(headerContainer);
